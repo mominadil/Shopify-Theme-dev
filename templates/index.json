@@ -220,7 +220,7 @@
             "box_size": "small",
             "content_position": "center middle",
             "title": "Hello World!",
-            "slide_clickable": true,
+            "slide_clickable": false,
             "href": "",
             "enable_button": true,
             "button_label": "Click here",
@@ -231,8 +231,9 @@
             "button_hover_label_color": "",
             "bg": "#ffffff",
             "text_color": "#000000",
-            "background_size": "contain",
-            "background_position": "center"
+            "background_size": "cover",
+            "background_position": "center",
+            "image": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg"
           }
         },
         "6eaaa1dc-9436-468b-9570-1030b1ec66a5": {
@@ -284,8 +285,8 @@
         "009f9abc-223e-4bdb-96db-06aa617a68cf"
       ],
       "settings": {
-        "show_arrows": false,
-        "show_dots": false,
+        "show_arrows": true,
+        "show_dots": true,
         "infinite": true,
         "autoplay": true,
         "autoplay_speed": 3,

@@ -1,0 +1,202 @@
+/*
+ *
+ * Copyright (C) 2017 Dominic Masters
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.carousel {
+  max-width: 100%;
+  overflow: hidden;
+}
+.carousel .item {
+  position: relative;
+  display: block;
+}
+.carousel .item .box-sizer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .item .box-sizer > .image {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+/*
+ * Box Sizer Utility Class, you can override this with your own way of sizing 
+ * The slides.
+ *
+ * Most likely one day this will have its own repo as well, since I tend to use
+ * these helpers a fair bit
+ */
+.box-sizer {
+  width: 100%;
+}
+.box-sizer.square, .box-sizer.box, .box-sizer.one-by-one {
+  padding-bottom: 100%;
+}
+.box-sizer.one-by-one-half, .box-sizer.two-by-one {
+  padding-bottom: 50%;
+}
+.box-sizer.three-by-one, .box-sizer.one-by-one-third {
+  padding-bottom: 33.3333333333%;
+}
+.box-sizer.one-by-two-thirds, .box-sizer.three-by-two {
+  padding-bottom: 66.6666666667%;
+}
+.box-sizer.three-by-four, .box-sizer.three-quarters, .box-sizer.seven-tenths {
+  padding-bottom: 75%;
+}
+.box-sizer.sixteen-by-nine, .box-sizer.widescreen {
+  padding-bottom: 56.25%;
+}
+.box-sizer.nine-by-sixteen, .box-sizer.vertical-widescreen, .box-sizer.mobile {
+  padding-bottom: 177.7777777778%;
+}
+.box-sizer.four-sevenths {
+  padding-bottom: 57.1428571429%;
+}
+.box-sizer.six-by-one, .box-sizer.one-by-one-sixth {
+  padding-bottom: 16.6666666667%;
+}
+
+/*
+ * Content Box Helper Class
+ *
+ * You will probably want to heavily modify this, again this will likely become
+ * its own repo one day since I use it a fair bit.
+ */
+.content-box {
+  text-align: center;
+}
+.content-box .title {
+  margin: 0 0 0.3em;
+  padding: 0 0.3em;
+}
+.content-box p {
+  margin-bottom: 1em;
+}
+.content-box .btn {
+  padding: 0.9em 2em;
+}
+.content-box.size-small .title {
+  font-size: 3.5em;
+}
+.content-box.size-medium .title {
+  font-size: 4em;
+}
+.content-box.size-large {
+  max-width: 90%;
+}
+.content-box.size-large p {
+  font-size: 1.5em;
+}
+.content-box.size-large .title {
+  font-size: 5em;
+}
+.content-box.size-large .btn {
+  font-size: 1.8em;
+}
+@media only screen and (max-width : 1024px) {
+  .content-box.size-small .title {
+    font-size: 3.5em;
+  }
+  .content-box.size-medium p {
+    font-size: 1.25em;
+  }
+  .content-box.size-medium .title {
+    font-size: 5.25em;
+  }
+  .content-box.size-medium .btn {
+    font-size: 1.3em;
+  }
+  .content-box.size-large p {
+    font-size: 1.5em;
+  }
+  .content-box.size-large .title {
+    font-size: 6.5em;
+  }
+  .content-box.size-large .btn {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .content-box {
+    position: absolute;
+  }
+  .content-box.size-small {
+    width: 33%;
+  }
+  .content-box.size-medium {
+    width: 66%;
+  }
+  .content-box.top {
+    top: 5%;
+  }
+  .content-box.middle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .content-box.bottom {
+    bottom: 5%;
+  }
+  .content-box.left {
+    left: 5%;
+  }
+  .content-box.center {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .content-box.right {
+    right: 5%;
+  }
+  .content-box.middle.center {
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width : 600px) {
+  .content-box {
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+  .content-box.size-small {
+    width: 75%;
+  }
+  .content-box.size-medium {
+    width: 90%;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .content-box.size-small, .content-box.size-medium, .content-box.size-large {
+    width: 96%;
+    margin: 2%;
+  }
+  .content-box:not(.dont-stack) p {
+    olor: #333 !important;
+  }
+  .content-box.dont-stack {
+    position: absolute;
+    left: 5%;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+  }
+}

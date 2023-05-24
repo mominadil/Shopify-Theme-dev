@@ -226,10 +226,10 @@
             "button_label": "Click here",
             "custom_button": false,
             "button_color": "#000000",
-            "button_text_color": "#FFFFFF",
-            "button_hover_color": "#B44BDC",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#b44bdc",
             "button_hover_label_color": "",
-            "bg": "#FFFFFF",
+            "bg": "#ffffff",
             "text_color": "#000000",
             "background_size": "contain",
             "background_position": "center"
@@ -247,10 +247,10 @@
             "button_label": "Click here",
             "custom_button": false,
             "button_color": "#000000",
-            "button_text_color": "#FFFFFF",
-            "button_hover_color": "#B44BDC",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#b44bdc",
             "button_hover_label_color": "",
-            "bg": "#FFFFFF",
+            "bg": "#ffffff",
             "text_color": "#000000",
             "background_size": "contain",
             "background_position": "center"
@@ -268,10 +268,10 @@
             "button_label": "Click here",
             "custom_button": false,
             "button_color": "#000000",
-            "button_text_color": "#FFFFFF",
-            "button_hover_color": "#B44BDC",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#b44bdc",
             "button_hover_label_color": "",
-            "bg": "#FFFFFF",
+            "bg": "#ffffff",
             "text_color": "#000000",
             "background_size": "contain",
             "background_position": "center"
@@ -287,9 +287,9 @@
         "show_arrows": false,
         "show_dots": false,
         "infinite": true,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 3,
-        "carousel_ratio": "two-by-one"
+        "carousel_ratio": "three-by-two"
       }
     }
   },

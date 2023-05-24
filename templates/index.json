@@ -289,7 +289,7 @@
         "show_dots": true,
         "infinite": true,
         "autoplay": true,
-        "autoplay_speed": 3,
+        "autoplay_speed": 6,
         "carousel_ratio": "three-by-two"
       }
     }

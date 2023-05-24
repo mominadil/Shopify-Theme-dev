@@ -13,7 +13,10 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 {%endcomment%}
-
+  {{ 'carousel.css' | asset_url | stylesheet_tag }}
+  {{ 'slick.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
 <style type="text/css">
   {%-for block in section.blocks-%}
     .slide--{{block.id}} { background: {{ block.settings.bg }}; }

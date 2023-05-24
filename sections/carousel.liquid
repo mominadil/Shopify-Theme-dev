@@ -14,7 +14,9 @@
   limitations under the License.
 {%endcomment%}
   {{ 'carousel.css' | asset_url | stylesheet_tag }}
-  {{ 'slick.css' | asset_url | stylesheet_tag }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
 <style type="text/css">
   {%-for block in section.blocks-%}
     .slide--{{block.id}} { background: {{ block.settings.bg }}; }
@@ -110,9 +112,9 @@
 
   TODO: Track the carousels that get unloaded
 {%endcomment%}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer="defer"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script src="{{ 'slick.min.js' | asset_url }}" defer="defer" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer="defer"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" defer="defer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer="defer"></script>
 <script type="text/javascript">
   window.carousels = window.carousels || {};
   window.carousels['{{section.id}}'] = function() {

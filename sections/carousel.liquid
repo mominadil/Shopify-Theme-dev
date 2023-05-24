@@ -15,8 +15,6 @@
 {%endcomment%}
   {{ 'carousel.css' | asset_url | stylesheet_tag }}
   {{ 'slick.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
 <style type="text/css">
   {%-for block in section.blocks-%}
     .slide--{{block.id}} { background: {{ block.settings.bg }}; }
@@ -112,6 +110,9 @@
 
   TODO: Track the carousels that get unloaded
 {%endcomment%}
+      
+<script src="{{ 'jquery.min.js' | asset_url }}" defer="defer" type="text/javascript"></script>
+<script src="{{ 'slick.min.js' | asset_url }}" defer="defer" type="text/javascript"></script>
 <script type="text/javascript">
   window.carousels = window.carousels || {};
   window.carousels['{{section.id}}'] = function() {
